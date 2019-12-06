@@ -1,0 +1,4 @@
+
+# product-service-test.yml
+server:
+port: 8772
