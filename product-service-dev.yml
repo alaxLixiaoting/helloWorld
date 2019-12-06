@@ -1,0 +1,4 @@
+
+# product-service-dev.yml
+server:
+port: 8771
