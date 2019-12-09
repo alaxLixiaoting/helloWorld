@@ -1,0 +1,31 @@
+spring:
+  cloud:
+    config:
+      discovery:
+         enabled: true
+         serviceId: config
+      profile: dev
+      label: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    lease-expiration-duration-in-seconds: 10
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: false
